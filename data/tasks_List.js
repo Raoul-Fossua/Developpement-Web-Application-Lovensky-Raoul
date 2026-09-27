@@ -13,8 +13,8 @@
 let tasksList = [
     {
         idtache         : "1",
-        "titleTask": "",
-        descriptionTask : "Créer le formulaire d'inscription",
+        "titleTask": "calendrier universitaire Personnel (2026_2027)"
+        descriptionTask : "Projets et deadlines importants du M2 SYNVA",
         idPriority      : "2",
         categoryTask    : "Etudes",
         creationDateTask: "2026-09-25T09:00:00+01:00",
