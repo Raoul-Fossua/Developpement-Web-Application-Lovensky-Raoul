@@ -37,7 +37,6 @@ let prioritiesList = [
         priorityName : "Peu importante",
         priorityLevel: "1",
         priorityColor: "#28A745",
-        priorityIcon : "🟢",
         validPriority: "1"
     }
 ];
