@@ -3,7 +3,7 @@
    ------------------------------------------------------------
    Auteurs      : Raoul FOSSUA TINDO & Lovensnsky DERVIS
    Contexte    : Cours Web Programming 1.x - Étape N1
-   Analogie    : movieList (cours JS)
+   Analogie    : AcademygoalsList (cours JS)
    MySQL       : table "tasks" - PRIMARY KEY : idTask
    ------------------------------------------------------------
    Structure   : Array d'objets JSON
@@ -61,7 +61,7 @@ let tasksList = [
         archivedTask    : "0",
         favoriteTask    : "1",
         tagsTask        : "Stage et/ou alternance",
-        durationTask    : "30",
+        durationTask    : "12 mois",
         validTask       : "1"
     },
     {
@@ -71,23 +71,23 @@ let tasksList = [
         idPriority      : "4",
         categoryTask    : "dream Perso",
         creationDateTask: "2026-09-25",
-        dueDateTask     : "2026-09-26",
+        dueDateTask     : "2027-09-26",
         statusTask      : "done",
         doneTask        : "1",
         archivedTask    : "1",
         favoriteTask    : "0",
-        tagsTask        : "maison",
-        durationTask    : "45",
+        tagsTask        : "Personal development",
+        durationTask    : "12 mois",
         validTask       : "1"
     },
     {
         idTask          : "5",
-        titleTask       : "Appeler le médecin",
+        titleTask       : "Projet E-Learning",
         descriptionTask : "Certificat médical",
         idPriority      : "3",
-        categoryTask    : "Sante",
-        creationDateTask: "2026-09-25T14:00:00+01:00",
-        dueDateTask     : "2026-09-28T12:00:00+01:00",
+        categoryTask    : "Social et humanité",
+        creationDateTask: "2026-09-25",
+        dueDateTask     : "2027-09-28",
         statusTask      : "cancel",
         doneTask        : "0",
         archivedTask    : "1",
