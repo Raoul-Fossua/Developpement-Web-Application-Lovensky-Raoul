@@ -44,8 +44,8 @@ let tasksList = [
         doneTask        : "0",
         archivedTask    : "0",
         favoriteTask    : "0",
-        tagsTask        : "CSS;Grid",
-        durationTask    : "60",
+        tagsTask        : "Project owner",
+        durationTask    : "3 mois",
         validTask       : "1"
     },
     {
