@@ -29,7 +29,7 @@ let tasksList = [
         archivedTask    : "0",
         favoriteTask    : "1",
         tagsTask        : "HTML5;TP; très important",
-        durationTask    : "120",
+        durationTask    : "12 mois",
         validTask       : "1"
     },
     {
