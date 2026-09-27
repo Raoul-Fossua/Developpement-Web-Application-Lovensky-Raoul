@@ -40,7 +40,7 @@ let tasksList = [
         categoryTask    : "Gestion de projet",
         creationDateTask: "2027-03-01",
         dueDateTask     : "2026-06-30",
-        statusTask      : " non débuté",
+        statusTask      : "non débuté",
         doneTask        : "0",
         archivedTask    : "0",
         favoriteTask    : "0",
