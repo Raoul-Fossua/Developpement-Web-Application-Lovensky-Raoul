@@ -15,8 +15,7 @@ let prioritiesList = [
         idPriority   : "1",
         priorityName : "Urgente",
         priorityLevel: "4",
-        priorityColor: "#8B0000",
-        priorityIcon : "🚨",
+        priorityColor: "#8B0000"
         validPriority: "1"
     },
     {
@@ -24,15 +23,13 @@ let prioritiesList = [
         priorityName : "Importante",
         priorityLevel: "3",
         priorityColor: "#DC3545",
-        priorityIcon : "🔴",
         validPriority: "1"
     },
     {
         idPriority   : "3",
         priorityName : "Moyenne",
         priorityLevel: "2",
-        priorityColor: "#FFC107",
-        priorityIcon : "🟡",
+        priorityColor: "#FFC107"
         validPriority: "1"
     },
     {
