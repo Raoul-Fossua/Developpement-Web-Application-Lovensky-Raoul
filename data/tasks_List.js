@@ -16,14 +16,19 @@ let tasksList = [
         "titleTask": "calendrier universitaire Personnel (2026_2027)"
         descriptionTask : "Projets et deadlines importants du M2 SYNVA",
         idPriority      : "2",
-        categoryTask    : "Etudes",
-        creationDateTask: "2026-09-25T09:00:00+01:00",
-        dueDateTask     : "2026-10-02T23:59:00+01:00",
-        statusTask      : "doing",
-        doneTask        : "0",
+        categoryTask    : "Mémoire M2",
+        creationDateTask: "2026-08-25",
+        dueDateTask     : "2027-06-30",
+        statusTask      : "En cours",
+        idStepTask      : "5",
+        "step1" :"Sujet et problématique"
+        "STEP2":        :  "dépot du projet et le choix d'un directeur de mémoire"
+        "Step3"         :  "rédaction et recontre avec le directeur de mémoire" 
+        "Step4"         :  "correction finale et dépot du mémoire"
+        "Step5"         :  "Soutenance de mémoire"
         archivedTask    : "0",
         favoriteTask    : "1",
-        tagsTask        : "HTML5;TP;urgent",
+        tagsTask        : "HTML5;TP; très important",
         durationTask    : "120",
         validTask       : "1"
     },
