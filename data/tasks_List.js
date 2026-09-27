@@ -1,7 +1,7 @@
 /* ============================================================
    TASKS LIST - Liste des tâches
    ------------------------------------------------------------
-   Auteur      : Raoul FOSSUA TINDO & Lovensnsky DERVIS
+   Auteurs      : Raoul FOSSUA TINDO & Lovensnsky DERVIS
    Contexte    : Cours Web Programming 1.x - Étape N1
    Analogie    : movieList (cours JS)
    MySQL       : table "tasks" - PRIMARY KEY : idTask
@@ -12,8 +12,8 @@
 
 let tasksList = [
     {
-        idTask          : "1",
-        titleTask       : "Préparer le TP HTML5",
+        idtache         : "1",
+        "titleTask": "",
         descriptionTask : "Créer le formulaire d'inscription",
         idPriority      : "2",
         categoryTask    : "Etudes",
