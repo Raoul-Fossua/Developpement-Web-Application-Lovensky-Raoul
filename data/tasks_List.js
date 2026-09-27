@@ -28,7 +28,7 @@ let tasksList = [
         "Step5"         :  "Soutenance de mémoire"
         archivedTask    : "0",
         favoriteTask    : "1",
-        tagsTask        : "HTML5;TP; très important",
+        tagsTask        : " très important",
         durationTask    : "12 mois",
         validTask       : "1"
     },
