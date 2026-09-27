@@ -37,7 +37,7 @@ let tasksList = [
         titleTask       : "Projet tutoré",
         descriptionTask : " Travail sur projet pour un commentaire ",
         idPriority      : "3",
-        categoryTask    : "Etudes",
+        categoryTask    : "Gestion de projet",
         creationDateTask: "2027-03-01",
         dueDateTask     : "2026-06-30",
         statusTask      : " non débuté",
