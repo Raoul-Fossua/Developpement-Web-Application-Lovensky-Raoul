@@ -45,10 +45,17 @@ let prioritiesList = [
         priorityLevel: "1",
         priorityColor: "#28A745",
         validPriority: "1"
-    }
+    },
    {
         idPriority   : "6",
         priorityName : "urgent et important",
+        priorityLevel: "1",
+        priorityColor: "#28A745",
+        validPriority: "1"
+    },
+    {
+        idPriority   : "7",
+        priorityName : "délais non-negociables",
         priorityLevel: "1",
         priorityColor: "#28A745",
         validPriority: "1"
