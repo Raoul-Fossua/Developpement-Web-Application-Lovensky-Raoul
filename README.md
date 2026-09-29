@@ -124,8 +124,8 @@ text
 ---
 
 ## 🔗 Relation PK/FK
-prioritiesList.idPriority ←──── tasksList.idPriority
-(PRIMARY KEY) (FOREIGN KEY)
+prioritiesList.idPriority   ←  tasksList.idPriority
+(PRIMARY KEY)                     (FOREIGN KEY)
 
 text
 
