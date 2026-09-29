@@ -1,8 +1,8 @@
 markdown
-# To Do List  (Projet Web Programming 1.x)
+# To Do List  (Projet Developpement-Web-Application)
 
 **Auteurs** : Raoul FOSSUA TINDO & Lovensky DERVIS  
-**Contexte** : Cours Web Programming 1.x 
+**Contexte** : Cours DeveloppementWeb et Applications 
 **Étape** : N1  (Structure des données JSON)  
 **Date** : 2026-09-29  
 **Version** : 1.0.0
@@ -217,4 +217,4 @@ N3 : Enregistrement LocalStorage
 N4 : Dashboard de gestion des tâches
 
 © 2026 — Raoul FOSSUA TINDO & Lovensky DERVIS
-Cours Web Programming 1.x  
+Cours Cours DeveloppementWeb et Applications
