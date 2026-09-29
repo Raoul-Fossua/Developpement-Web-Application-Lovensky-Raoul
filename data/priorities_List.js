@@ -1,7 +1,7 @@
 /* ============================================================
    PRIORITIES LIST - Référentiel des priorités
    ------------------------------------------------------------
-   Auteur      : Raoul FOSSUA TINDO & Lovensnsky DERVIS
+   Auteurs     : Raoul FOSSUA TINDO & Lovensky DERVIS
    Contexte    : Cours Web Programming 1.x - Étape N1
    Analogie    : categoryList (cours JS)
    MySQL       : table "priorities" - PRIMARY KEY : idPriority
@@ -13,7 +13,7 @@
 let prioritiesList = [
     {
         idPriority   : "1",
-        priorityName : "Urgente",
+        priorityName : "Urgente et importante",
         priorityLevel: "4",
         priorityColor: "#8B0000",
         validPriority: "1"
@@ -39,25 +39,25 @@ let prioritiesList = [
         priorityColor: "#28A745",
         validPriority: "1"
     },
-   {
+    {
         idPriority   : "5",
-        priorityName : "A déléguer",
-        priorityLevel: "1",
-        priorityColor: "#28A745",
+        priorityName : "À déléguer",
+        priorityLevel: "2",
+        priorityColor: "#17A2B8",
         validPriority: "1"
     },
-   {
+    {
         idPriority   : "6",
-        priorityName : "urgent et important",
-        priorityLevel: "1",
-        priorityColor: "#28A745",
+        priorityName : "Délais non-négociables",
+        priorityLevel: "4",
+        priorityColor: "#6F42C1",
         validPriority: "1"
     },
     {
         idPriority   : "7",
-        priorityName : "délais non-negociables",
+        priorityName : "En attente / Bloquée",
         priorityLevel: "1",
-        priorityColor: "#28A745",
+        priorityColor: "#6C757D",
         validPriority: "1"
     }
 ];
