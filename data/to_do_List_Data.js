@@ -2,7 +2,7 @@
    TO DO LIST - Fichier maître
    ------------------------------------------------------------
    Auteurs     : Raoul FOSSUA TINDO & Lovensky DERVIS
-   Contexte    : Cours Web Programming 1.x - Étape N1
+   Contexte    : Cours DeveloppementWeb et Applications - Étape N1
    Rôle        : Assemble priorities_List + tasks_List + tests
    ------------------------------------------------------------
    Prérequis (ordre de chargement HTML) :
