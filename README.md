@@ -217,4 +217,4 @@ N3 : Enregistrement LocalStorage
 N4 : Dashboard de gestion des tâches
 
 © 2026 — Raoul FOSSUA TINDO & Lovensky DERVIS
-Cours Cours DeveloppementWeb et Applications
+Cours DeveloppementWeb et Applications
