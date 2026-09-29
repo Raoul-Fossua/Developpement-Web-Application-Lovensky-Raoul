@@ -15,7 +15,7 @@ let prioritiesList = [
         idPriority   : "1",
         priorityName : "Urgente",
         priorityLevel: "4",
-        priorityColor: "#8B0000"
+        priorityColor: "#8B0000",
         validPriority: "1"
     },
     {
@@ -29,7 +29,7 @@ let prioritiesList = [
         idPriority   : "3",
         priorityName : "Moyenne",
         priorityLevel: "2",
-        priorityColor: "#FFC107"
+        priorityColor: "#FFC107",
         validPriority: "1"
     },
     {
