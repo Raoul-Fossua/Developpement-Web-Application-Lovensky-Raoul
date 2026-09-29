@@ -2,7 +2,7 @@
    TASKS LIST - Liste des tâches
    ------------------------------------------------------------
    Auteurs       : Raoul FOSSUA TINDO & Lovensky DERVIS
-   Contexte      : Cours Web Programming 1.x - Étape N1
+   Contexte      : Cours DeveloppementWeb et Applications - Étape N1
    Analogie      : cours JS
    MySQL         : table "tasks" - PRIMARY KEY : idTask
    ------------------------------------------------------------
