@@ -1,13 +1,14 @@
 /* ============================================================
    TO DO LIST - Fichier maître
    ------------------------------------------------------------
-   Auteur      : Raoul FOSSUA TINDO & Lovensnsky DERVIS
+   Auteurs     : Raoul FOSSUA TINDO & Lovensky DERVIS
    Contexte    : Cours Web Programming 1.x - Étape N1
    Rôle        : Assemble priorities_List + tasks_List + tests
    ------------------------------------------------------------
-   Dépendances :
-     - priorities_List.js  (référentiel des priorités)
-     - tasks_List.js       (entités des tâches)
+   Prérequis (ordre de chargement HTML) :
+     1. priorities_List.js
+     2. tasks_List.js
+     3. to_do_List_Data.js (ce fichier)
    ============================================================ */
 
 
@@ -21,10 +22,9 @@
 let prioritiesList = [
     {
         idPriority   : "1",
-        priorityName : "Urgente",
+        priorityName : "Urgente et importante",
         priorityLevel: "4",
         priorityColor: "#8B0000",
-        priorityIcon : "🚨",
         validPriority: "1"
     },
     {
@@ -32,7 +32,6 @@ let prioritiesList = [
         priorityName : "Importante",
         priorityLevel: "3",
         priorityColor: "#DC3545",
-        priorityIcon : "🔴",
         validPriority: "1"
     },
     {
@@ -40,7 +39,6 @@ let prioritiesList = [
         priorityName : "Moyenne",
         priorityLevel: "2",
         priorityColor: "#FFC107",
-        priorityIcon : "🟡",
         validPriority: "1"
     },
     {
@@ -48,7 +46,27 @@ let prioritiesList = [
         priorityName : "Peu importante",
         priorityLevel: "1",
         priorityColor: "#28A745",
-        priorityIcon : "🟢",
+        validPriority: "1"
+    },
+    {
+        idPriority   : "5",
+        priorityName : "À déléguer",
+        priorityLevel: "2",
+        priorityColor: "#17A2B8",
+        validPriority: "1"
+    },
+    {
+        idPriority   : "6",
+        priorityName : "Délais non-négociables",
+        priorityLevel: "4",
+        priorityColor: "#6F42C1",
+        validPriority: "1"
+    },
+    {
+        idPriority   : "7",
+        priorityName : "En attente / Bloquée",
+        priorityLevel: "1",
+        priorityColor: "#6C757D",
         validPriority: "1"
     }
 ];
@@ -65,82 +83,82 @@ let prioritiesList = [
 let tasksList = [
     {
         idTask          : "1",
-        titleTask       : "Préparer le TP HTML5",
-        descriptionTask : "Créer le formulaire d'inscription",
+        titleTask       : "Calendrier universitaire personnel (2026-2027)",
+        descriptionTask : "Projets et deadlines importants du M2 SYNVA",
         idPriority      : "2",
-        categoryTask    : "Etudes",
-        creationDateTask: "2026-09-25T09:00:00+01:00",
-        dueDateTask     : "2026-10-02T23:59:00+01:00",
-        statusTask      : "doing",
+        categoryTask    : "Mémoire M2",
+        creationDateTask: "2026-08-25",
+        dueDateTask     : "2027-06-30",
+        statusTask      : "en_cours",
         doneTask        : "0",
         archivedTask    : "0",
         favoriteTask    : "1",
-        tagsTask        : "HTML5;TP;urgent",
-        durationTask    : "120",
+        tagsTask        : "très important",
+        durationTask    : "12 mois",
         validTask       : "1"
     },
     {
         idTask          : "2",
-        titleTask       : "Réviser le CSS Grid",
-        descriptionTask : "grid-template-columns, gap, minmax",
+        titleTask       : "Projet tutoré",
+        descriptionTask : "Travail sur projet pour un commentaire",
         idPriority      : "3",
-        categoryTask    : "Etudes",
-        creationDateTask: "2026-09-25T10:15:00+01:00",
-        dueDateTask     : "2026-09-30T23:59:00+01:00",
+        categoryTask    : "Gestion de projet",
+        creationDateTask: "2026-03-01",
+        dueDateTask     : "2026-06-30",
         statusTask      : "todo",
         doneTask        : "0",
         archivedTask    : "0",
         favoriteTask    : "0",
-        tagsTask        : "CSS;Grid",
-        durationTask    : "60",
+        tagsTask        : "Project owner",
+        durationTask    : "3 mois",
         validTask       : "1"
     },
     {
         idTask          : "3",
-        titleTask       : "Envoyer le CV école santé",
-        descriptionTask : "PDF + lettre de motivation",
+        titleTask       : "Rapport de Stage",
+        descriptionTask : "Portfolio expliquant votre expérience au sein de l'entreprise",
         idPriority      : "1",
-        categoryTask    : "Administratif",
-        creationDateTask: "2026-09-25T11:30:00+01:00",
-        dueDateTask     : "2026-09-27T18:00:00+01:00",
+        categoryTask    : "Professionnel",
+        creationDateTask: "2027-03-01",
+        dueDateTask     : "2027-06-27",
         statusTask      : "todo",
         doneTask        : "0",
         archivedTask    : "0",
         favoriteTask    : "1",
-        tagsTask        : "CV;candidature",
-        durationTask    : "30",
+        tagsTask        : "Stage et/ou alternance",
+        durationTask    : "12 mois",
         validTask       : "1"
     },
     {
         idTask          : "4",
-        titleTask       : "Faire les courses",
-        descriptionTask : "Liste sur le frigo",
+        titleTask       : "Deadlines des rendus finaux du semestre 1",
+        descriptionTask : "Réussite du 1er semestre M2 SYNVA 2026-2027",
         idPriority      : "4",
-        categoryTask    : "Perso",
-        creationDateTask: "2026-09-25T08:00:00+01:00",
-        dueDateTask     : "2026-09-26T19:00:00+01:00",
+        categoryTask    : "Développement personnel",
+        creationDateTask: "2026-09-25",
+        dueDateTask     : "2027-09-26",
         statusTask      : "done",
         doneTask        : "1",
         archivedTask    : "1",
         favoriteTask    : "0",
-        tagsTask        : "maison",
-        durationTask    : "45",
+        tagsTask        : "Personal development",
+        durationTask    : "12 mois",
         validTask       : "1"
     },
     {
         idTask          : "5",
-        titleTask       : "Appeler le médecin",
-        descriptionTask : "Certificat médical",
+        titleTask       : "Projet E-Learning",
+        descriptionTask : "Création d'une plateforme e-learning",
         idPriority      : "3",
-        categoryTask    : "Sante",
-        creationDateTask: "2026-09-25T14:00:00+01:00",
-        dueDateTask     : "2026-09-28T12:00:00+01:00",
+        categoryTask    : "Social et humanité",
+        creationDateTask: "2026-09-25",
+        dueDateTask     : "2027-09-28",
         statusTask      : "cancel",
         doneTask        : "0",
         archivedTask    : "1",
         favoriteTask    : "0",
-        tagsTask        : "santé;medical",
-        durationTask    : "15",
+        tagsTask        : "social;education",
+        durationTask    : "12 mois",
         validTask       : "1"
     }
 ];
@@ -153,6 +171,7 @@ let tasksList = [
    3.2  Relation PK/FK (comme movieList / categoryList)
    3.3  Sérialisation LocalStorage (stringify / parse)
    ============================================================ */
+
 
 /* ---------- 3.1 Affichage brut ---------- */
 
@@ -171,9 +190,9 @@ tasksList.forEach(function(item) {
     let searchedIdPriority = item.idPriority;
     let foundPriority = prioritiesList.find(
         priorityElement => priorityElement.idPriority == searchedIdPriority
-    ).priorityName;
+    );
 
-    console.log(`Task "${item.titleTask}" has priority "${foundPriority}"`);
+    console.log(`Task "${item.titleTask}" has priority "${foundPriority.priorityName}" (level ${foundPriority.priorityLevel})`);
 });
 
 
