@@ -1,7 +1,7 @@
 # Étape 1 — Analyse des propriétés (1A)
 
 **Auteurs** : Raoul FOSSUA TINDO & Lovensky DERVIS  
-**Contexte** : Cours Web Programming 1.x — Projet To Do List  
+**Contexte** : Cours DeveloppementWeb et Applications — Projet To Do List  
 **Étape** : N1  (Structure des données au format JSON)
 
 ---
