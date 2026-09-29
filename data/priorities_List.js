@@ -2,7 +2,7 @@
    PRIORITIES LIST - Référentiel des priorités
    ------------------------------------------------------------
    Auteurs     : Raoul FOSSUA TINDO & Lovensky DERVIS
-   Contexte    : Cours Web Programming 1.x - Étape N1
+   Contexte    : Cours DeveloppementWeb et Applications - Étape N1
    Analogie    : categoryList (cours JS)
    MySQL       : table "priorities" - PRIMARY KEY : idPriority
    ------------------------------------------------------------
