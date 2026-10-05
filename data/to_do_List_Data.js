@@ -23,7 +23,7 @@ let prioritiesList = [
     {
         idPriority   : 1,
         priorityName : "Urgente et importante",
-        priorityLevel: 4,
+        priorityLevel: 4
         priorityColor: "#8B0000",
         validPriority: "1"
     },
@@ -51,21 +51,21 @@ let prioritiesList = [
     {
         idPriority   : 5,
         priorityName : "À déléguer",
-        priorityLevel: "2",
+        priorityLevel: 2
         priorityColor: "#17A2B8",
         validPriority: "1"
     },
     {
-        idPriority   : "6",
+        idPriority   : 6,
         priorityName : "Délais non-négociables",
-        priorityLevel: "4",
+        priorityLevel: 4
         priorityColor: "#6F42C1",
         validPriority: "1"
     },
     {
-        idPriority   : "7",
+        idPriority   : 7,
         priorityName : "En attente / Bloquée",
-        priorityLevel: "1",
+        priorityLevel: 1
         priorityColor: "#6C757D",
         validPriority: "1"
     }
