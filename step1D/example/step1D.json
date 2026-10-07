@@ -1,0 +1,32 @@
+[
+{
+"idAccomplissement": 1,
+"idTask": 1,
+"pourcentage": "25%",
+"statutAccomplissement": "Débuté / Pas mal"
+},
+{
+"idAccomplissement": 2,
+"idTask": 2,
+"pourcentage": "50%",
+"statutAccomplissement": "En cours / Bien"
+},
+{
+"idAccomplissement": 3,
+"idTask": 3,
+"pourcentage": "10%",
+"statutAccomplissement": "Très peu avancé"
+},
+{
+"idAccomplissement": 4,
+"idTask": 4,
+"pourcentage": "75%",
+"statutAccomplissement": "Presque terminé / Très bien"
+},
+{
+"idAccomplissement": 5,
+"idTask": 5,
+"pourcentage": "100%",
+"statutAccomplissement": "Terminé / Excellent"
+}
+]
