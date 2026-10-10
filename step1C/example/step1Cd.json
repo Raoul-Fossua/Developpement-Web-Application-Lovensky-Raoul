@@ -1,0 +1,39 @@
+[
+{
+"idstatus"   : 1,
+"statusName" : "En cours"  
+},
+    
+{
+"idstatus"   : 2,
+"statusName" : "À faire"
+},
+{
+"idstatus"   : 3,
+"statusName" : "Terminé"
+},
+{
+"idstatus"   : 4,
+"statusName" : "En attente de validation"
+},
+{
+"idstatus"   : 5,
+"statusName" : "à augmenter"
+},
+{
+"idstatus"   : 6,
+"statusName" : "À revoir"
+},
+{
+"idstatus"   : 7,
+"statusName" : "À planifier"
+},
+{
+"idstatus"   : 8,
+"statusName" : "À déléguer"
+},
+{
+"idstatus"   : 9,
+"statusName" : "Annulé"
+}
+]

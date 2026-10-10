@@ -1,0 +1,38 @@
+[
+    {
+        "idcategory"   : 1,
+        "categoryName" : "Recherche",
+        "validCategory": "1"
+    },
+    {
+        "idcategory"   : 2,
+        "categoryName" : "Gestion de projet",
+        "validCategory": "1"
+    },
+    {
+        "idcategory"  : 3,
+        "categoryName" : "Travaux pratiques",
+        "validCategory": "1"
+    },
+    {
+        "idcategory"   : 4,
+        "categoryName" : "rapport de stage",
+        "validCategory": "1",
+        "validPriority": "1"
+    },
+    {
+        "idcategory"   : 5,
+        "categoryName" : "Projet E-Learning",
+        "validCategory": "1"
+    },
+    {
+        "idcategory"   : 6,
+        "categoryName" : "Délais non-négociables",
+        "validCategory": "1"
+    },
+    {
+        "idcategory"   : 7,
+        "categoryName" : "En attente / Bloquée",
+        "validCategory": "1"
+    }
+]
