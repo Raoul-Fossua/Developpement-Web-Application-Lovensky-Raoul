@@ -33,7 +33,7 @@ to_do_list/
 ├── étape 1D/
 │   └── step 1D_Catégories.json
 ├── étape 1E/
-│   └── step 1E_HTML_+_tests.html
+│   └── step 1E.html
 └── README.md
 ```
 
