@@ -1,0 +1,15 @@
+[
+  {
+    "idTask": 1,
+    "titleTask": "Calendrier universitaire personnel (2026-2027)",
+    "descriptionTask": "Projets et deadlines importants du M2 SYNVA",
+    "idPriority": 2,
+    "idCategory": 1,
+    "idEcheance": 1,
+    "idAccomplissement": 1,
+    "creationDateTask": "2026-08-25",
+    "dueDateTask": "2027-06-30",
+    "durationTask": "12 mois",
+    "validTask": "1"
+  }
+]

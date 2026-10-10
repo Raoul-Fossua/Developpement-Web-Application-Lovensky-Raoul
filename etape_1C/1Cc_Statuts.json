@@ -1,0 +1,23 @@
+[
+  {
+    "idStatus": 1,
+    "statusName": "En cours",
+    "statusCode": "EN_COURS",
+    "statusColor": "#FFC107",
+    "validStatus": "1"
+  },
+  {
+    "idStatus": 2,
+    "statusName": "En attente",
+    "statusCode": "EN_ATTENTE",
+    "statusColor": "#6C757D",
+    "validStatus": "1"
+  },
+  {
+    "idStatus": 3,
+    "statusName": "Terminé",
+    "statusCode": "TERMINE",
+    "statusColor": "#28A745",
+    "validStatus": "1"
+  }
+]

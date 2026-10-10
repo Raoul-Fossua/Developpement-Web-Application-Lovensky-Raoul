@@ -1,0 +1,47 @@
+[
+  {
+    "idCategory": 1,
+    "categoryName": "Mémoire M2",
+    "categoryCode": "MEMOIRE_M2",
+    "idStatus": 1,
+    "categoryColor": "#FFC107",
+    "descriptionCat": "Tâche liée au mémoire de M2",
+    "validCategory": "1"
+  },
+  {
+    "idCategory": 2,
+    "categoryName": "Gestion de projet",
+    "categoryCode": "GESTION_PROJET",
+    "idStatus": 2,
+    "categoryColor": "#6C757D",
+    "descriptionCat": "Tâche liée à la gestion de projet",
+    "validCategory": "1"
+  },
+  {
+    "idCategory": 3,
+    "categoryName": "Rapport de stage",
+    "categoryCode": "RAPPORT_STAGE",
+    "idStatus": 1,
+    "categoryColor": "#FFC107",
+    "descriptionCat": "Tâche liée au rapport de stage",
+    "validCategory": "1"
+  },
+  {
+    "idCategory": 4,
+    "categoryName": "Travaux pratiques",
+    "categoryCode": "TRAVAUX_PRATIQUES",
+    "idStatus": 3,
+    "categoryColor": "#28A745",
+    "descriptionCat": "Tâche liée aux travaux pratiques",
+    "validCategory": "1"
+  },
+  {
+    "idCategory": 5,
+    "categoryName": "Projet E-Learning",
+    "categoryCode": "PROJET_ELEARNING",
+    "idStatus": 3,
+    "categoryColor": "#28A745",
+    "descriptionCat": "Tâche liée au projet E-Learning",
+    "validCategory": "1"
+  }
+]

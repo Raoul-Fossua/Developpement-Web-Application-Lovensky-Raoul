@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List — Étape 1E</title>
+
+    <script>
+    /* ============================================================
+       1A — STRUCTURE D'UNE TÂCHE
+       ============================================================ */
+    let uneTache = [
+        {
+            "idTask": 1,
+            "titleTask": "Calendrier universitaire personnel (2026-2027)",
+            "descriptionTask": "Projets et deadlines importants du M2 SYNVA",
+            "idPriority": 2,
+            "idCategory": 1,
+            "idEcheance": 1,
+            "idAccomplissement": 1,
+            "creationDateTask": "2026-08-25",
+            "dueDateTask": "2027-06-30",
+            "durationTask": "12 mois",
+            "validTask": "1"
+        }
+    ];
+
+    /* ============================================================
+       1B — PRIORITÉS (Critère 1)
+       ============================================================ */
+    let prioritiesList = [
+        { "idPriority": 1, "priorityName": "Urgente et importante",  "priorityLevel": 4, "priorityColor": "#8B0000", "validPriority": "1" },
+        { "idPriority": 2, "priorityName": "Importante",             "priorityLevel": 3, "priorityColor": "#DC3545", "validPriority": "1" },
+        { "idPriority": 3, "priorityName": "Moyenne",                "priorityLevel": 2, "priorityColor": "#FFC107", "validPriority": "1" },
+        { "idPriority": 4, "priorityName": "Peu importante",         "priorityLevel": 1, "priorityColor": "#28A745", "validPriority": "1" },
+        { "idPriority": 5, "priorityName": "À déléguer",             "priorityLevel": 2, "priorityColor": "#17A2B8", "validPriority": "1" },
+        { "idPriority": 6, "priorityName": "Délais non-négociables", "priorityLevel": 4, "priorityColor": "#6F42C1", "validPriority": "1" },
+        { "idPriority": 7, "priorityName": "En attente / Bloquée",   "priorityLevel": 1, "priorityColor": "#6C757D", "validPriority": "1" }
+    ];
+
+    /* ============================================================
+       1Ca — ÉCHÉANCES
+       ============================================================ */
+    let echeancesListe = [
+        { "idEcheance": 1, "idTask": 1, "dateDebut": "2026-10-01", "dateFin": "2026-11-15" },
+        { "idEcheance": 2, "idTask": 2, "dateDebut": "2026-10-15", "dateFin": "2026-12-01" },
+        { "idEcheance": 3, "idTask": 3, "dateDebut": "2026-11-01", "dateFin": "2027-01-10" },
+        { "idEcheance": 4, "idTask": 4, "dateDebut": "2026-10-05", "dateFin": "2026-10-30" },
+        { "idEcheance": 5, "idTask": 5, "dateDebut": "2026-10-10", "dateFin": "2026-11-20" }
+    ];
+
+    /* ============================================================
+       1Cb — ACCOMPLISSEMENT
+       ============================================================ */
+    let accomplissementListe = [
+        { "idAccomplissement": 1, "idTask": 1, "pourcentage": "25%",  "statutAccomplissement": "Débuté / Pas mal" },
+        { "idAccomplissement": 2, "idTask": 2, "pourcentage": "50%",  "statutAccomplissement": "En cours / Bien" },
+        { "idAccomplissement": 3, "idTask": 3, "pourcentage": "10%",  "statutAccomplissement": "Très peu avancé" },
+        { "idAccomplissement": 4, "idTask": 4, "pourcentage": "75%",  "statutAccomplissement": "Presque terminé / Très bien" },
+        { "idAccomplissement": 5, "idTask": 5, "pourcentage": "100%", "statutAccomplissement": "Terminé / Excellent" }
+    ];
+
+    /* ============================================================
+       1Cc — STATUTS
+       ============================================================ */
+    let statusList = [
+        { "idStatus": 1, "statusName": "En cours",   "statusCode": "EN_COURS",   "statusColor": "#FFC107", "validStatus": "1" },
+        { "idStatus": 2, "statusName": "En attente", "statusCode": "EN_ATTENTE", "statusColor": "#6C757D", "validStatus": "1" },
+        { "idStatus": 3, "statusName": "Terminé",    "statusCode": "TERMINE",    "statusColor": "#28A745", "validStatus": "1" }
+    ];
+
+    /* ============================================================
+       1D — CATÉGORIES (regroupe les statuts)
+       ============================================================ */
+    let categoriesList = [
+        { "idCategory": 1, "categoryName": "Mémoire M2",           "categoryCode": "MEMOIRE_M2",       "idStatus": 1, "categoryColor": "#FFC107", "descriptionCat": "Tâche liée au mémoire de M2",       "validCategory": "1" },
+        { "idCategory": 2, "categoryName": "Gestion de projet",    "categoryCode": "GESTION_PROJET",   "idStatus": 2, "categoryColor": "#6C757D", "descriptionCat": "Tâche liée à la gestion de projet", "validCategory": "1" },
+        { "idCategory": 3, "categoryName": "Rapport de stage",     "categoryCode": "RAPPORT_STAGE",    "idStatus": 1, "categoryColor": "#FFC107", "descriptionCat": "Tâche liée au rapport de stage",    "validCategory": "1" },
+        { "idCategory": 4, "categoryName": "Travaux pratiques",    "categoryCode": "TRAVAUX_PRATIQUES","idStatus": 3, "categoryColor": "#28A745", "descriptionCat": "Tâche liée aux travaux pratiques",  "validCategory": "1" },
+        { "idCategory": 5, "categoryName": "Projet E-Learning",    "categoryCode": "PROJET_ELEARNING", "idStatus": 3, "categoryColor": "#28A745", "descriptionCat": "Tâche liée au projet E-Learning",   "validCategory": "1" }
+    ];
+
+    /* ============================================================
+       1E — TÂCHES (Entité principale avec FK)
+       ============================================================ */
+    let tasksList = [
+        {
+            "idTask": 1,
+            "titleTask": "Calendrier universitaire personnel (2026-2027)",
+            "descriptionTask": "Projets et deadlines importants du M2 SYNVA",
+            "idPriority": 2,
+            "idCategory": 1,
+            "idEcheance": 1,
+            "idAccomplissement": 1,
+            "creationDateTask": "2026-08-25",
+            "dueDateTask": "2027-06-30",
+            "durationTask": "12 mois",
+            "validTask": "1"
+        },
+        {
+            "idTask": 2,
+            "titleTask": "Projet tutoré",
+            "descriptionTask": "Projet tutoré du M2 SYNVA",
+            "idPriority": 1,
+            "idCategory": 2,
+            "idEcheance": 2,
+            "idAccomplissement": 2,
+            "creationDateTask": "2026-03-01",
+            "dueDateTask": "2026-06-30",
+            "durationTask": "3 mois",
+            "validTask": "1"
+        },
+        {
+            "idTask": 3,
+            "titleTask": "Rapport de stage",
+            "descriptionTask": "Rapport de stage du M2 SYNVA",
+            "idPriority": 3,
+            "idCategory": 3,
+            "idEcheance": 3,
+            "idAccomplissement": 3,
+            "creationDateTask": "2027-03-01",
+            "dueDateTask": "2027-06-27",
+            "durationTask": "12 mois",
+            "validTask": "1"
+        },
+        {
+            "idTask": 4,
+            "titleTask": "Deadlines des rendus de TP",
+            "descriptionTask": "Suivi des deadlines pour les rendus de travaux pratiques",
+            "idPriority": 2,
+            "idCategory": 4,
+            "idEcheance": 4,
+            "idAccomplissement": 4,
+            "creationDateTask": "2026-09-25",
+            "dueDateTask": "2027-09-26",
+            "durationTask": "12 mois",
+            "validTask": "1"
+        },
+        {
+            "idTask": 5,
+            "titleTask": "Projet E-Learning",
+            "descriptionTask": "Projet E-Learning du M2 SYNVA",
+            "idPriority": 1,
+            "idCategory": 5,
+            "idEcheance": 5,
+            "idAccomplissement": 5,
+            "creationDateTask": "2026-09-25",
+            "dueDateTask": "2027-09-28",
+            "durationTask": "12 mois",
+            "validTask": "1"
+        }
+    ];
+
+    /* ============================================================
+       TESTS
+       ============================================================ */
+
+    console.log("=== 1A — STRUCTURE D'UNE TÂCHE ===");
+    console.log(uneTache);
+
+    console.log("=== 1B — PRIORITÉS ===");
+    console.log(prioritiesList);
+
+    console.log("=== 1Ca — ÉCHÉANCES ===");
+    console.log(echeancesListe);
+
+    console.log("=== 1Cb — ACCOMPLISSEMENT ===");
+    console.log(accomplissementListe);
+
+    console.log("=== 1Cc — STATUTS ===");
+    console.log(statusList);
+
+    console.log("=== 1D — CATÉGORIES ===");
+    console.log(categoriesList);
+
+    console.log("=== 1E — TÂCHES ===");
+    console.log(tasksList);
+
+    /* ---------- Relation PK/FK ---------- */
+    console.log("=== RELATION PK/FK ===");
+    tasksList.forEach(function(item) {
+        let foundPriority = prioritiesList.find(
+            p => p.idPriority == item.idPriority
+        ).priorityName;
+
+        let foundCategory = categoriesList.find(
+            c => c.idCategory == item.idCategory
+        );
+
+        let foundStatus = statusList.find(
+            s => s.idStatus == foundCategory.idStatus
+        ).statusName;
+
+        let foundEcheance = echeancesListe.find(
+            e => e.idEcheance == item.idEcheance
+        );
+
+        let foundAccomplissement = accomplissementListe.find(
+            a => a.idAccomplissement == item.idAccomplissement
+        );
+
+        console.log(`Tâche "${item.titleTask}" | Priorité : ${foundPriority} | Catégorie : ${foundCategory.categoryName} | Statut : ${foundStatus} | Échéance : ${foundEcheance.dateDebut} → ${foundEcheance.dateFin} | Avancement : ${foundAccomplissement.pourcentage}`);
+    });
+
+    /* ---------- LocalStorage ---------- */
+    console.log("=== LOCALSTORAGE ===");
+
+    let tasksListString = JSON.stringify(tasksList);
+    localStorage.setItem("tasksList", tasksListString);
+
+    let tasksListFromLS = localStorage.getItem("tasksList");
+    let tasksListJSON = JSON.parse(tasksListFromLS);
+    console.log("Données depuis LocalStorage :", tasksListJSON);
+    </script>
+</head>
+<body>
+    <h1>To Do List — Étape 1E</h1>
+    <p>Ouvrir la console (F12) pour voir les tests et la relation PK/FK.</p>
+</body>
+</html>
