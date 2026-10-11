@@ -7,8 +7,7 @@
 👉 [Accéder à l'application sur AlwaysData](https://lovensky.alwaysdata.net/step1E.html)
 
 **URL :** https://lovensky.alwaysdata.net/step1E.html
-
-## Présentation
+Présentation
 
 Ce projet correspond aux étapes A1 à E1 du cours de Développement Web et Applications.
 
@@ -16,7 +15,7 @@ Le fichier `step1E.html` contient les structures de données JavaScript utilisé
 
 Les données sont manipulées en JavaScript, avec notamment l'utilisation de JSON et du `localStorage`.
 
-## Manipulations réalisées
+Manipulations réalisées
 
 - Création et manipulation de tableaux et d'objets JavaScript
 - Affichage des données avec `console.log()`
@@ -26,7 +25,7 @@ Les données sont manipulées en JavaScript, avec notamment l'utilisation de JSO
 - Enregistrement avec `localStorage.setItem()`
 - Récupération avec `localStorage.getItem()`
 
-## Fichier principal
+Fichier principal
 
 `step1E.html`
 
