@@ -1,0 +1,35 @@
+[
+{
+  "idTask":1,
+  "titleTask": "Rédaction de mémoire M2 (2026-2027)",
+  "descriptionTask": "validation de cursus du master SYNVA",
+  "cv":"Le travail contient 4 chapitres traitant chacun d'entre eux d'un aspect particulier de la recherche. Le premier chapitre présente le contexte et les objectifs de la recherche, le deuxième chapitre décrit la méthodologie utilisée pour collecter et analyser les données, le troisième chapitre présente les résultats obtenus et le quatrième chapitre discute des implications de ces résultats et propose des recommandations pour les recherches futures."
+
+},
+{
+  "idTask": 2,
+  "titleTask": "Projet tutoré",
+  "descriptionTask": "Projet tutoré du M2 SYNVA",
+  "cv":"Le projet tutoré est une activité académique qui permet aux étudiants de mettre en pratique les connaissances acquises au cours de leur formation. Il consiste à travailler sur un projet concret, souvent en collaboration avec une entreprise ou une organisation, sous la supervision d'un tuteur académique. L'objectif est de développer des compétences professionnelles, de renforcer l'esprit d'équipe et de favoriser l'autonomie des étudiants dans la réalisation de projets réels."
+
+},
+{
+  "idTask": 3,
+  "titleTask": "Rapport de stage",
+  "descriptionTask": "Rapport de stage du M2 SYNVA",
+  "cv":"Le rapport de stage est un document écrit qui décrit l'expérience professionnelle d'un étudiant au sein d'une entreprise ou d'une organisation. Il présente les missions accomplies, les compétences développées et les résultats obtenus pendant la période de stage. Le rapport de stage permet également à l'étudiant de réfléchir sur son apprentissage, d'analyser les pratiques professionnelles observées et de proposer des recommandations pour améliorer les processus ou les méthodes de travail." 
+
+},
+{
+  "idTask": 4,
+  "titleTask": "Deadlines des rendus de TP",
+  "descriptionTask": "Suivi des deadlines pour les rendus de travaux pratiques",
+  "cv": "Le suivi des deadlines pour les rendus de travaux pratiques est essentiel pour garantir la qualité et le respect des délais."
+},
+{
+  "idTask": 5,
+  "titleTask": "Projet E-Learning",
+  "descriptionTask": "Projet E-Learning du M2 SYNVA",
+  "cv": "Le projet E-Learning est une initiative visant à développer des ressources pédagogiques en ligne pour faciliter l'apprentissage à distance. Il comprend la création de modules interactifs, de vidéos explicatives et d'exercices pratiques, permettant aux étudiants d'acquérir des compétences spécifiques dans leur domaine d'étude. L'objectif est de rendre l'apprentissage plus accessible, flexible et engageant, tout en favorisant l'autonomie des apprenants."
+  }
+]
