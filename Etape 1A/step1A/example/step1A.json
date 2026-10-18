@@ -1,0 +1,48 @@
+
+[
+  {
+    "idTask": 1,
+    "titleTask": "Rédaction de mémoire M2 (2026-2027)",
+    "descriptionTask": "Validation du cursus du master SYNVA",
+    "cv": "Le travail contient quatre chapitres : le contexte et les objectifs de la recherche, la méthodologie, les résultats, puis la discussion et les recommandations.",
+    "dateDebut": "2026-09-01",
+    "dateFin": "2027-06-25",
+    "dateEcheance": "2027-06-25"
+  },
+  {
+    "idTask": 2,
+    "titleTask": "Projet tutoré",
+    "descriptionTask": "Projet tutoré du M2 SYNVA",
+    "cv": "Le projet tutoré permet de mettre en pratique les connaissances acquises pendant la formation, à travers un projet concret réalisé sous la supervision d'un tuteur académique.",
+    "dateDebut": "2026-03-01",
+    "dateFin": "2027-06-25",
+    "dateEcheance": "2027-06-25"
+  },
+  {
+    "idTask": 3,
+    "titleTask": "Rapport de stage",
+    "descriptionTask": "Rapport de stage du M2 SYNVA",
+    "cv": "Le rapport de stage présente les missions réalisées, les compétences développées, les résultats obtenus et une analyse de l'expérience professionnelle.",
+    "dateDebut": "2027-04-01",
+    "dateFin": "2027-06-25",
+    "dateEcheance": "2027-06-25"
+  },
+  {
+    "idTask": 4,
+    "titleTask": "Deadlines des rendus de TP",
+    "descriptionTask": "Suivi des échéances des travaux pratiques",
+    "cv": "Le suivi des échéances permet de planifier les travaux pratiques, d'organiser le travail et de respecter les délais fixés dans le cadre du master.",
+    "dateDebut": "2026-09-01",
+    "dateFin": "2027-01-31",
+    "dateEcheance": "2027-01-31"
+  },
+  {
+    "idTask": 5,
+    "titleTask": "Projet E-Learning",
+    "descriptionTask": "Projet E-Learning du M2 SYNVA",
+    "cv": "Le projet E-Learning vise à concevoir des ressources pédagogiques numériques, notamment des modules interactifs, des vidéos explicatives et des exercices pratiques.",
+    "dateDebut": "2026-09-01",
+    "dateFin": "2027-06-25",
+    "dateEcheance": "2027-06-25"
+  }
+]

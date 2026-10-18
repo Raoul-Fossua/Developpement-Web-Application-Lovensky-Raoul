@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulaire de saisie d'une tâche pour la To Do List SYNVA">
+    <title>To Do List SYNVA - Étape 2A</title>
+
+<style>
+ body {
+ margin: 0;
+ font-family: Arial, sans-serif;
+ background-color: #f3f3f3;
+ color: #222;
+  }
+
+    header, footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #234e70;
+    color: white;
+    }
+    main {
+    width: 90%;
+    max-width: 700px;
+    margin: 25px auto;
+    }
+
+    form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    }
+
+    fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #bbb;
+    }
+
+    legend {
+    font-weight: bold;
+    }
+
+    .champ {
+    margin-bottom: 15px;
+    }
+
+    label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    }
+
+    input, select, textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    font: inherit;
+    }
+
+    textarea {
+    min-height: 100px;
+    }
+
+    .dates {
+    display: flex;
+    gap: 15px;
+    }
+
+    .dates .champ {
+    flex: 1;
+    min-width: 0;
+    }
+
+    .boutons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    }
+
+    button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    }
+
+    .valider {
+    background-color: #234e70;
+    color: white;
+    }
+
+    .effacer {
+    background-color: #ddd;
+    color: #222;
+    }
+
+    footer {
+    font-size: 0.9rem;
+    }
+
+    @media (max-width: 500px) {
+    main {
+    width: 95%;
+    margin: 15px auto;
+    }
+
+    form {
+    padding: 12px;
+    }
+
+    .dates, .boutons {
+    display: block;
+   }
+
+    .boutons button {
+    width: 100%;
+    margin-top: 8px;
+    }
+    }
+    </style>
+</head>
+
+<body>
+<header>
+<h1>Ma To Do List</h1>
+<p>Master 2 SYNVA - Étape 2A</p>
+</header>
+
+<main>
+<h2>Ajouter une tâche</h2>
+<p>Les champs marqués d'un * sont obligatoires.</p>
+
+<form action="#" method="get">
+<fieldset>
+<legend>Informations sur la tâche</legend>
+
+<div class="champ">
+<label for="titleTask">Titre de la tâche *</label>
+<input type="text" id="titleTask" name="titleTask"
+placeholder="Ex. : Rédaction du mémoire M2"
+maxlength="120" required>
+</div>
+
+<div class="champ">
+<label for="descriptionTask">Description *</label>
+<textarea id="descriptionTask" name="descriptionTask"
+placeholder="Décrire le travail à réaliser"
+required></textarea>
+</div>
+
+<div class="champ">
+<label for="idCategory">Catégorie *</label>
+<select id="idCategory" name="idCategory" required>
+<option value="" selected disabled>Choisir une catégorie</option>
+<option value="1">Recherche scientifique</option>
+<option value="2">Gestion de projet</option>
+<option value="3">Académique</option>
+<option value="4">Travaux académiques et contrôle continu</option>
+<option value="5">Portfolio et bilan de compétences</option>
+</select>
+</div>
+
+<div class="champ">
+<label for="idPriority">Priorité *</label>
+<select id="idPriority" name="idPriority" required>
+<option value="" selected disabled>Choisir une priorité</option>
+<option value="1">Important et urgent</option>
+<option value="2">Important</option>
+<option value="3">Urgent</option>
+<option value="4">Peu important</option>
+<option value="5">Faible priorité</option>
+</select>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Planification et suivi</legend>
+
+<div class="dates">
+<div class="champ">
+<label for="dateDebut">Date de début *</label>
+<input type="date" id="dateDebut" name="dateDebut" required>
+</div>
+
+<div class="champ">
+<label for="dateFin">Date de fin prévue *</label>
+<input type="date" id="dateFin" name="dateFin" required>
+</div>
+</div>
+
+<div class="champ">
+<label for="idPhaseRealisation">Phase de réalisation *</label>
+<select id="idPhaseRealisation" name="idPhaseRealisation" required>
+<option value="" selected disabled>Choisir une phase</option>
+<option value="1">Définition de la problématique et des hypothèses</option>
+<option value="2">Revue de littérature et méthodologie</option>
+<option value="3">Analyse des données et rédaction finale</option>
+<option value="4">Analyse du besoin et planification</option>
+<option value="5">Conception et réalisation</option>
+<option value="6">Évaluation et validation du projet</option>
+<option value="7">Définition des objectifs académiques</option>
+<option value="8">Réalisation des travaux universitaires</option>
+<option value="9">Finalisation et remise des travaux</option>
+<option value="10">Analyse de la consigne</option>
+<option value="11">Réalisation et vérification</option>
+<option value="12">Correction et dépôt du rendu</option>
+<option value="13">Recensement des compétences et réalisations</option>
+<option value="14">Constitution du portfolio</option>
+<option value="15">Bilan des compétences et valorisation</option>
+</select>
+</div>
+
+<div class="champ">
+<label for="idStatus">Statut *</label>
+<select id="idStatus" name="idStatus" required>
+<option value="" selected disabled>Choisir un statut</option>
+<option value="1">En cours</option>
+<option value="2">À faire</option>
+<option value="3">Terminé</option>
+<option value="4">En attente de validation</option>
+<option value="5">À augmenter / à diminuer</option>
+<option value="6">À revoir</option>
+<option value="7">À planifier</option>
+<option value="8">À déléguer</option>
+<option value="9">Annulé</option>
+</select>
+</div>
+</fieldset>
+
+<div class="boutons">
+<button class="effacer" type="reset">Effacer</button>
+<button class="valider" type="submit">Valider la saisie</button>
+</div>
+</form>
+</main>
+
+<footer>
+<p>Copy Right@ 2026</p>
+<p>Réalisé par Lovensky Dervis et Raoul FOSSUA TINDO</p>
+<p>Projet pédagogique - Master 2 SYNVA - 2026</p>
+</footer>
+</body>
+</html>
