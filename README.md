@@ -30,4 +30,4 @@ Lien : https://lovensky.alwaysdata.net/step3A.html
 
 ## Suite du projet
 
-L’étape suivante consistera à enregistrer les tâches dans le `localStorage` du navigateur, puis à afficher les tâches enregistrées dans un tableau récapitulatif, conformément aux objectifs des étapes 3B et 3C.
+L’étape suivante consistera à enregistrer les tâches dans le `localStorage` du navigateur, puis à afficher les tâches enregistrées dans un tableau récapitulatif, conformément aux objectifs des étapes 3B et 3C
