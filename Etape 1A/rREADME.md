@@ -6,9 +6,6 @@
 
 👉 https://lovensky.alwaysdata.net/step1E.html 
 
-**URL :** https://lovensky.alwaysdata.net/step1E.html
-Présentation
-
 Étape 1E — Déclaration des variables JavaScript
 
 Présentation
