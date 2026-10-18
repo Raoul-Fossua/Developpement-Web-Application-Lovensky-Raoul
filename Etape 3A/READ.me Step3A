@@ -1,0 +1,31 @@
+# Étape 3A – Dynamisation du formulaire
+
+## Présentation
+
+Cette étape consiste à rendre le formulaire de saisie des tâches dynamique en utilisant JavaScript et les listes de paramètres définies dans le projet.
+
+## Travail réalisé
+
+- Reprise du formulaire de l’étape 2A ;
+- Définition des listes de paramètres en JavaScript ;
+- Génération dynamique des options des listes déroulantes ;
+- Affichage des catégories, des priorités et des statuts ;
+- Filtrage des phases de réalisation selon la catégorie sélectionnée.
+
+## Technologies utilisées
+
+- HTML5 pour la structure du formulaire ;
+- CSS3 pour la mise en forme ;
+- JavaScript pour la gestion des données et la génération des listes.
+
+## Fonctionnement
+
+Les options des listes déroulantes sont générées à partir des données définies en JavaScript. Lorsqu’une catégorie est sélectionnée, les phases de réalisation correspondantes sont proposées.
+
+## Objectif
+
+Cette étape permet de passer d’un formulaire statique à un formulaire dynamique. L’enregistrement des tâches dans `localStorage` et leur affichage dans un tableau récapitulatif correspondent aux étapes suivantes du projet.
+
+## Accès au formulaire
+
+[https://lovensky.alwaysdata.net/step3A.html](https://lovensky.alwaysdata.net/step3A.html)
