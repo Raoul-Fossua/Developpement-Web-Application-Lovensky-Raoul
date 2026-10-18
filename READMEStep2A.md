@@ -13,7 +13,8 @@ Le formulaire est réalisé sans JavaScript, conformément aux consignes de l'é
 
 ## Accès au formulaire
 
-🔗 [Consulter le formulaire sur AlwaysData](https://lovensky.alwaysdata.net/step2A.html)
+🔗 https://lovensky.alwaysdata.net/step2A.html
+
 
 ## Objectif
 
