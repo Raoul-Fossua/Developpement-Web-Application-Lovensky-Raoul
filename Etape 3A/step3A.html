@@ -2,19 +2,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>To Do List - Étape 3A</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List - Étape 3A</title>
 
-<style>
-body {
-font-family: Arial, sans-serif;
-max-width: 700px;
-margin: 20px auto;
-padding: 15px;
-}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 15px;
+        }
 
-label {
+        label {
             display: block;
             margin-top: 15px;
         }
@@ -33,7 +33,7 @@ label {
     </style>
 
     <script>
-        // Données des paramètres reprises de l'étape 1E
+        // Données reprises de l'étape 1E
 
         let prioritiesList = [
             {"idPriority":1,"priorityName":"Important et urgent","validPriority":"1"},
@@ -81,39 +81,50 @@ label {
             {"idStatus":9,"statusName":"Annulé"}
         ];
 
-        // Remplir une liste déroulante à partir des données
-        function remplirListe(idListe, donnees, idElement, nomElement) {
-            let liste = document.getElementById(idListe);
+        // Afficher les données dans la console
+        console.log("Priorités :", prioritiesList);
+        console.log("Catégories :", categoriesList);
+        console.log("Phases de réalisation :", phaseRealisationList);
+        console.log("Statuts :", statusList);
 
-            donnees.forEach(function(element) {
-                liste.insertAdjacentHTML(
-                    "beforeend",
-                    `<option value="${element[idElement]}">${element[nomElement]}</option>`
-                );
+        // Remplir une liste déroulante
+        function remplirListe(idListe, donnees, idElement, nomElement) {
+            let htmlCode = "";
+
+            donnees.forEach(function(item, index) {
+                htmlCode += `<option value="${item[idElement]}">${item[nomElement]}</option>`;
             });
+
+            document.getElementById(idListe).innerHTML += htmlCode;
         }
 
         // Afficher les phases correspondant à la catégorie choisie
         function afficherPhases() {
             let idCategorie = Number(document.getElementById("idCategory").value);
 
-            let listePhases = phaseRealisationList.filter(function(phase) {
-                return phase.idCategory === idCategorie;
+            let listePhases = phaseRealisationList.filter(function(item) {
+                return item.idCategory === idCategorie;
             });
 
-            let selectPhase = document.getElementById("idphaseRealisation");
-            selectPhase.innerHTML = '<option value="">Choisir une phase</option>';
+            let htmlCode = '<option value="">Choisir une phase</option>';
 
-            remplirListe(
-                "idphaseRealisation",
-                listePhases,
-                "idPhaseRealisation",
-                "phaseName"
-            );
+            listePhases.forEach(function(item, index) {
+                htmlCode += `<option value="${item.idPhaseRealisation}">${item.phaseName}</option>`;
+            });
+
+            document.getElementById("idphaseRealisation").innerHTML = htmlCode;
+
+            console.log("Phases affichées :", listePhases);
         }
 
-        // Initialiser les listes après le chargement du document
-        document.addEventListener("DOMContentLoaded", function() {
+        // Initialiser le formulaire après le chargement du document
+        document.onreadystatechange = function() {
+            if (document.readyState === "complete") {
+                dynamicWriting();
+            }
+        };
+
+        function dynamicWriting() {
             remplirListe("idCategory", categoriesList, "idCategory", "categoryName");
             remplirListe("idPriority", prioritiesList, "idPriority", "priorityName");
             remplirListe("idStatus", statusList, "idStatus", "statusName");
@@ -122,7 +133,9 @@ label {
                 "change",
                 afficherPhases
             );
-        });
+
+            console.log("Formulaire dynamique chargé.");
+        }
     </script>
 </head>
 
@@ -167,7 +180,7 @@ label {
         </select>
 
         <button type="button" onclick="alert('Formulaire dynamique de l’étape 3A.')">
-            Tester le formulaire
+            Enregistrer le formulaire
         </button>
     </form>
 </body>
