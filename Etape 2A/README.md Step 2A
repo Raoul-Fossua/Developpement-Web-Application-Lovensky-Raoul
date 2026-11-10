@@ -13,8 +13,8 @@ Cette étape consiste à créer un formulaire HTML permettant de saisir les info
 
 ## Technologies utilisées
 
-- HTML5 pour la structure du formulaire ;
-- CSS3 pour la mise en forme.
+- **HTML5** : structure du formulaire ;
+- **CSS3** : mise en forme.
 
 ## Contraintes
 
@@ -26,4 +26,4 @@ Cette étape permet de disposer d’un formulaire statique qui servira de base �
 
 ## Accès au formulaire
 
-[https://lovensky.alwaysdata.net/step2A.html](https://lovensky.alwaysdata.net/step2A.html)
+[Accéder au formulaire de saisie d’une tâche – Étape 2A](https://lovensky.alwaysdata.net/step2A.html) 
